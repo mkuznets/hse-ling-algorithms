@@ -1,0 +1,17 @@
+# Default behaviour: convert line endings to LF (Unix-style) on checkout.
+* text eol=lf
+
+# Explicit declarations of filetypes used in the project.
+*.py text eol=lf
+*.txt text eol=lf
+*.sync text eol=lf
+*.md text eol=lf
+*.cfg text eol=lf
+
+# Binary files: should not be modified
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.eps binary
