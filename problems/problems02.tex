@@ -1,0 +1,116 @@
+\documentclass[12pt,a4paper]{report}
+% \textheight = 30cm
+% \voffset = -36pt
+\footskip = 0cm
+
+\usepackage{cmap}
+\usepackage{type1ec}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+
+\usepackage{amsmath,amstext,amssymb}
+\usepackage{fullpage}
+
+\usepackage{ifpdf}
+\ifpdf
+  \usepackage[pdftex]{graphicx}
+  \usepackage[pdftex,unicode,bookmarks=false]{hyperref}
+
+  \pdfminorversion=5
+  \pdfcompresslevel=9
+  \pdfobjcompresslevel=9
+\fi
+
+\pagestyle{empty}
+
+
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{}
+
+\begin{document}
+
+\begin{center}
+\textbf{\LARGE{Теория алгоритмов. Листок 1}}\\
+BSc, компьютерная лингвистика, НИУ ВШЭ\\
+Выдан: 20 января 2016\\
+Дедлайн: 27 января 00:00\\
+\end{center}
+
+% == Лекция 2 ==
+% Абстрактные типы данных. 
+% Список и его реализации: массив, связный список (одно- и двусвязный), динамический массив. Бинарный поиск в массиве. list в Python.
+% Стек, очередь, двухсторонняя очередь. Их реализация через динамический массив и двусвязный список. dequeue в Python.
+% Коллекции с быстрыми добавлением, удалением и поиском.
+% Словарь. Реализация через бинарное дерево и хэш-таблицы. Разрешение коллизий: цепочки, открытая адресация (линейное пробирование).
+% Множества. Реализация через хэш-таблицы
+
+% == Семинар 2 ==
+% in-place алгоритмы
+% Цикл в связном списке
+% Многомерные массивы (vs реализации через вложенные списки)
+% Метод бисекции в математике, вычисление корня
+% Удалить элемент из связного списка
+% Стек для рекурсии и проверки скобочного выражения
+% LRU cache (обсуждение, реализация - в задачи)
+% 
+
+
+% 2 (1)
+% 3
+
+
+% == Листок 2 ==
+
+% Массивы, in-place и бинарный поиск
+% (2) 283. Move Zeroes
+% (4) 153. Find Minimum in Rotated Sorted Array
+
+% Связные списки
+% (2) 237. Delete Node in a Linked List
+% (2) 141. Linked List Cycle
+% (3) 206. Reverse Linked List
+
+
+% Стеки и очереди
+% (2) 20. Valid Parentheses
+% (2) 225. Implement Stack using Queues
+
+% Словари
+% (3) 146. LRU Cache
+% (5) 146. LRU Cache
+% 
+
+
+
+
+\section{Массивы, in-place алгоритмы и бинарный поиск}
+
+\begin{enumerate}
+
+  \item\,[2] \href{https://leetcode.com/problems/move-zeroes/}{Move Zeroes}\\
+  Напишите функцию, принимающую массив целых чисел, которая перемещает нули в конце массива, сохраняя порядок ненулевых элементов.
+  Например, если исходный массив равен \texttt{[0, 1, 0, 3, 12]}, после применения функции он должен быть равен \texttt{[1, 3, 12, 0, 0]}.
+
+  \begin{verbatim}
+class Solution(object):
+    def moveZeroes(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: void Do not return anything, modify nums in-place instead.
+        """
+  \end{verbatim}     
+
+
+\end{enumerate}
+
+
+\section{Связные списки}
+
+
+\section{Стеки и очереди}
+
+
+\section{Словари}
+
+\end{document}
