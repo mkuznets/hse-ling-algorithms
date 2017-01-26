@@ -24,10 +24,9 @@
 	        self.val = x
 	        self.next = next
 
-	lst = ListNode(1, ListNode(2, ListNode(3), ListNode(3)))  # 1 -> 2 -> 3 -> 4
-	lst.next.next.next = lst.next  # создаём цикл  1 -> 2 -> 3 -> 4 ↘
-								   #                     ↖__________|
-	hasCycle(lst)  # -> True
+	lst = ListNode(1, ListNode(2, ListNode(3, ListNode(4))))  # 1 -> 2 -> 3 -> 4
+	lst.next.next.next.next = lst.next  # создаём цикл  1 -> 2 -> 3 -> 4 ↘
+	                                    #                     ↖__________|
 	```
 
 5.  (2 балла) [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
