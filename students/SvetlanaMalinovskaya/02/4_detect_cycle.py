@@ -13,7 +13,7 @@ class Solution(object):
         next_node = None
         previous_node = None
 
-        if not current_node.next:
+        if current_node.next is None or head is None:
             return False
 
         while current_node:
@@ -23,3 +23,13 @@ class Solution(object):
             current_node = next_node
 
         return (previous_node == head)
+
+
+head = ListNode(1)
+a = ListNode(2)
+b = ListNode(3)
+head.next = None
+a.next = b
+b.next = head
+
+print (Solution().hasCycle(head))
