@@ -16,6 +16,9 @@ class HashTable(object):
         if self.filled == self.size:
             return -1
 
+        if self.find(element):
+            return
+
         key = self._get_hash(element)
 
         if self.table[key] is not None:
