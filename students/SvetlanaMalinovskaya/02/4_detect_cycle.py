@@ -9,15 +9,17 @@ class ListNode(object):
 
 class Solution(object):
     def hasCycle(self, head):
-        # Сложность O(n)
-        nodesSeen = {}
+        current_node = head
+        next_node = None
+        previous_node = None
 
-        node = head
-        while node:
-            if node in nodesSeen:
-                return True
+        if not current_node.next:
+            return False
 
-            nodesSeen[node] = True
-            node = node.next
+        while current_node:
+            next_node = current_node.next
+            current_node.next = previous_node
+            previous_node = current_node
+            current_node = next_node
 
-        return False
+        return (previous_node == head)
