@@ -9,12 +9,15 @@ class ListNode(object):
 
 class Solution(object):
     def hasCycle(self, head):
+        if not head:
+            return
+
+        if head.next is None:
+            return False
+
         current_node = head
         next_node = None
         previous_node = None
-
-        if current_node.next is None or head is None:
-            return False
 
         while current_node:
             next_node = current_node.next
@@ -23,13 +26,3 @@ class Solution(object):
             current_node = next_node
 
         return (previous_node == head)
-
-
-head = ListNode(1)
-a = ListNode(2)
-b = ListNode(3)
-head.next = None
-a.next = b
-b.next = head
-
-print (Solution().hasCycle(head))
