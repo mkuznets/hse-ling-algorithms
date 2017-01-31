@@ -44,4 +44,4 @@ class HashTable(object):
 
 
     def find(self, element):
-        return (self.table[self._get_hash(element)] is not None)
+        return (self.table[self._get_hash(element)] == element)
