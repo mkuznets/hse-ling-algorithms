@@ -10,7 +10,7 @@ class Solution(object):
                 i+=1
                 j+=1
         while (i<len(nums)):
-            nums[i] == 0
+            nums[i] = 0
             i+=1
 
         """
