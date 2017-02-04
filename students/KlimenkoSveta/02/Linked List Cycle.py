@@ -20,3 +20,4 @@ class Solution(object):
                     if turtle == hare:
                         return True
         return False
+    
