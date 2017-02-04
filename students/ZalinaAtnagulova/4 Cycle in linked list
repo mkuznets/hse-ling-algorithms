@@ -1,0 +1,17 @@
+class ListNode(object):
+    def __init__(self, x, next=None):
+        self.val = x
+        self.next = next
+    def __str__(self):
+        return str(self.val)
+
+def hasCycle(lst, s = set()):
+    if lst not in s:
+        s.add(lst)
+        hasCycle(lst.next)
+    else:
+        print(True)
+    
+lst = ListNode(1, ListNode(2, ListNode(3, ListNode(4))))
+lst.next.next.next.next = lst.next
+hasCycle(lst)
