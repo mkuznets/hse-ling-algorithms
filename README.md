@@ -2,7 +2,7 @@
 
 Курс для студентов 3-го года программы [Фундаментальная и компьютерная лингвистика](https://www.hse.ru/ba/ling/)
 
-* [Оценки за задания](https://docs.google.com/spreadsheets/d/1Lwz38H7USB2HzAwjWA8EarTZ6FIvJI_kNmKAMUbJTaA/edit?usp=sharing)
+* [Оценки за задания](https://docs.google.com/spreadsheets/d/1Lwz38H7USB2HzAwjWA8EarTZ6FIvJI_kNmKAMUbJTaA/pubhtml?gid=0&single=true)
 * [Процесс отправки заданий](meta/git_workflow.md)
 
 # Программа курса
@@ -37,9 +37,8 @@
    * Парадигма «разделяй и властвуй» (divide and conquer). Сортировка слиянием (Mergesort). Master theorem и её применение для оценки сложности.
    * Нижняя граница сложности сортировки, основанной на сравнениях.
    * *Quicksort. Поиск порядковых статистик (Selection problem).*
+   * *Selection sort (как приквел к Heapsort)*
    * *Двоичная куча (Binary heap)*
    * *Heapsort*
 4. [предварительно] Поиск
 5. [предварительно] Графы
-
-
