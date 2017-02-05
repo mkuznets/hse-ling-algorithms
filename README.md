@@ -2,6 +2,7 @@
 
 Курс для студентов 3-го года программы [Фундаментальная и компьютерная лингвистика](https://www.hse.ru/ba/ling/)
 
+* [Оценки за задания](https://docs.google.com/spreadsheets/d/1Lwz38H7USB2HzAwjWA8EarTZ6FIvJI_kNmKAMUbJTaA/edit?usp=sharing)
 * [Процесс отправки заданий](meta/git_workflow.md)
 
 # Программа курса
