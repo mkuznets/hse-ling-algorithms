@@ -16,7 +16,10 @@ class HashTable:
                 occupied = False
             position += 1
             if position == len(self.table):
-                position = 0
+                if initposition == 0:
+                    position = -1
+                else:
+                    position = 0
         if occupied and self.table[position] is None:
             self.table[position] = element
             occupied = False
