@@ -3,12 +3,10 @@ from bisect import *
 def insertion_sort(A):
     for j in range(1, len(A)):
         key = A[j]
-        i = j
-
-        # TODO: Заменить линейный поиск на бинарный.
-        # while i>0 and A[i-1]>key:
-        #     A[i] = A[i-1]
-        #     i -= 1
-        # A[i] = key
-
+        k = bisect_left(A, key, hi = j)
+        for i in range(j,k,-1):
+            A[i] = A[i-1]
+        A[k] = key
     return A
+
+print(insertion_sort([0,5,2,3,7,6,9,2,0]))
