@@ -1,0 +1,85 @@
+%% LyX 2.1.1 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{esint}
+\usepackage{babel}
+\begin{document}
+
+\section*{Problem 2}
+
+$log_{2}(n!)\ge c\times n\times log_{2}(n)$
+
+\medskip{}
+
+
+Let's multiply each side of the inequality by $\ln2>0$
+
+$\ln(n!)\ge c\times n\times\ln(n)$
+
+Let's divide both sides by n to obtain
+
+$\frac{\ln(n!)}{n}\ge c\times\ln(n)$
+
+\medskip{}
+
+
+$\frac{1}{n}\ln(n!)=\frac{1}{n}\sum_{k=1}^{n}\ln(k)=\frac{1}{n}\sum_{k=1}^{n}\ln(\frac{k}{n})+\frac{1}{n}\sum_{k=1}^{n}\ln(n)=\frac{1}{n}\sum_{k=1}^{n}(\frac{k}{n})+\frac{1}{n}n\ln(n)=\frac{1}{n}\sum_{k=1}^{n}\ln(\frac{k}{n})+\ln(n)$
+
+\medskip{}
+
+
+$\frac{1}{n}\sum_{k=1}^{n}\ln(\frac{k}{n})=\left(x_{k}=\frac{k}{n}\in(0,1];\Delta x=\frac{1}{n}\right)=$$\sum_{k=1}^{n}\ln(x_{k})\times\Delta x\approx\int_{0}^{1}\ln xdx$
+
+where the last equality uses the definition of the Riemann integral.
+
+\medskip{}
+
+
+$\int_{0}^{1}\ln xdx=1\times\ln(1)-\lim_{x\rightarrow0}x\times\ln(x)-\int_{0}^{1}x\times\frac{1}{x}dx$
+
+\medskip{}
+
+
+Applying the L'Hospital's Rule,
+
+$\lim_{x\rightarrow0}x\times\ln(x)=\lim_{x\rightarrow0}\frac{\ln x}{1/x}=\lim_{x\rightarrow0}\frac{1/x}{(-1/x^{2})}=0$
+
+\medskip{}
+
+
+Hence, $\frac{1}{n}\ln(n!)=\ln n-0-\int_{0}^{1}dx=\ln n-1$
+
+\medskip{}
+
+
+Plugging the last expression into the inequality, one obtains
+
+$\ln n-1\ge c\ln n$
+
+\medskip{}
+
+
+Dividing both sides of the inequality by n yields:
+
+$\ln n-1\ge c\ln n$, which is equivalent to $\ln n\ge\frac{1}{1-c}$
+
+\medskip{}
+
+
+Let's pick the value of c in $(0,1)$. For example, $c=0,5$
+
+$\ln n\ge\frac{1}{1-0,5}=2$, or $n\ge e^{2}$.
+
+\medskip{}
+
+
+For any $n\ge9$, the last inequality holds and so does the original
+inequality $log_{2}(n!)\ge c\times n\times log_{2}(n)$
+
+\medskip{}
+
+
+Q.E.D.
+\end{document}
