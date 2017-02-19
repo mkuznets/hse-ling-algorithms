@@ -2,7 +2,7 @@ def key(x):
     alpha = 'abcdefghijklmnopqrstuvwxyz'
     num = '0123456789'
     letters = list(alpha)
-    indices = list(range (-25, -1 ) )
+    indices = list(range (-27, -1 ) )
     d = dict(zip(letters, indices)) 
 
     repres = []  #тут репрезентация строки в виде цифр
@@ -18,3 +18,5 @@ def key(x):
     if found_num != '':  #если число в конце (потому что аппенд был только если мы встретили букву дальше)
         repres.append(int(found_num))
     return repres
+
+
