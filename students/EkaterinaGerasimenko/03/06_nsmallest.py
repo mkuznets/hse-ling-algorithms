@@ -23,7 +23,7 @@ def nsmallest(m, A):
 
 def quicksort_cut(m, A, start, end):
     if start >= end:
-        return A[:start]
+        return A[:m]
     if start < end:
         pivot = partition(A, start, end)
         if pivot == m:
