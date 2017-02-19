@@ -7,22 +7,27 @@ def sym_diff(a, b):
     [1, 3, 5, 10]
     """
     result = []
-    while len(a) > 0 and len(b) > 0:
-        if a[0] < b[0]:
-            result.append(a[0])
-            a = a[1:]
-        elif b[0] < a[0]:
-            result.append(b[0])
-            b = b[1:]
+    ind_a = 0
+    ind_b = 0
+    while len(a) > ind_a and len(b) > ind_b:
+        if a[ind_a] < b[ind_b]:
+            result.append(a[ind_a])
+            ind_a += 1
+        elif b[ind_b] < a[ind_a]:
+            result.append(b[ind_b])
+            ind_b += 1
         else:
-            a = a[1:]
-            b = b[1:]
-    if len(a) > 0:
-        result.extend(a)
-    if len(b) > 0:
-        result.extend(b)
+            ind_a += 1
+            ind_b += 1
+    while len(a) > ind_a:
+        result.append(a[ind_a])
+        ind_a += 1
+    while len(b) > ind_b:
+        result.append(b[ind_b])
+        ind_b += 1
     return result
 
 # print(sym_diff([1, 2, 3, 4, 5, 11, 48], [2, 4, 10, 11, 12]))
 # print(sym_diff([1], [1]))
+# print(sym_diff([1, 2, 3, 4, 5], [2, 4, 10]))
 
