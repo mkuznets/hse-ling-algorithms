@@ -11,15 +11,16 @@ def key(x):
     res = []
     ind = 0
     str_num = ''
-
     while ind < len(x):
         if x[ind] in '0123456789':
             str_num += x[ind]
             ind += 1
         else:
-            res.append(x[ind])
+            res.append(ord(x[ind].lower()))
             ind += 1
-    res.append(int(str_num))
+    if str_num != '':
+        res.append(int(str_num))
     return res
 
-# print(sorted(['lol3', 'a10', 'lol2', 'lol20', 'lol100', 'lol11', 'lol21', 'a1'], key=key))
+# print(sorted(['lol3llll23', 'a10', 'lol2ggdf45', 'lol100k5k', 'lol11', 'lol21', 'a1', 'lol2ggdf46'], key=key))
+
