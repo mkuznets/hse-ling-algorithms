@@ -1,30 +1,3 @@
-\documentclass[12pt]{extarticle}
-%Russian-specific packages
-%--------------------------------------
-\usepackage[T2A]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage[russian]{babel}
-%--------
-
-\title{hw3_algorithms}
-\author{83210 }
-\date{February 2017}
-
-
-\usepackage{geometry,nopageno}
-\geometry{a5paper,left=1cm,right=1cm,top=1cm,bottom=1cm}
-\usepackage{cmap, type1ec}
-\usepackage{verbatim,nameref}
-\usepackage{amsmath,amsthm,amstext,amssymb,amscd,
-            mathtools,mathrsfs,dsfont}
-            
-\newtheorem*{problem}{Задача}
-
-\begin{document}
-
-\begin{problem}[1]
-{\em Инверсией} в перестановке $\pi$ называется пара индексов $(i,j)$ такая что $i<j$, но $\pi_i>\pi_j$. Докажите, что в перестановке из $n$ элементов может быть не более $n(n-1)/2$ инверсий. В какой перестановке количество инверсий ровно $n(n-1)/2$?
-\end{problem}
 
 \begin{proof}
 
@@ -38,5 +11,3 @@
 Таким образом на i-ой итерации длина набора равна $n-i$, всего итераций будет $n-1$. То есть максимальное число инверсий в наборе будет $\sum_{i=1}^{n-1} (n-i) = \frac{1}{2}n(n-1)$ в случе, когда набор отсортирован от большего к меньшему.
 
 \end{proof}
-
-\end{document}
