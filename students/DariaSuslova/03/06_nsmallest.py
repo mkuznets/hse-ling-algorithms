@@ -11,14 +11,12 @@ def partition(A, lo, hi):
     return i
 
 def nsmallest(m, A):
-    i = 0
-    q = partition(A, 0, len(A)-1)
-    if i < q:
-        partition(A, 0, q-1)
-        i+=1
-    else:
-        partition(A, q+1, len(A)-1)
-        i+=1
+    for i in range(0, len(A)-1):
+        p = partition(A, 0, len(A)-1)
+        if i < p:
+            partition(A, 0, p-1)
+        else:
+            partition(A, p+1, len(A)-1)
     
     return A[:m:]
 
