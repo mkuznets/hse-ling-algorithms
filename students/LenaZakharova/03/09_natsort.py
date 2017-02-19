@@ -16,11 +16,12 @@ def key(x):
             str_num += x[ind]
             ind += 1
         else:
-            res.append(ord(x[ind].lower()))
+            str_num = ''
+            res.append(ord(x[ind].lower())+1000)
             ind += 1
     if str_num != '':
         res.append(int(str_num))
     return res
 
 # print(sorted(['lol3llll23', 'a10', 'lol2ggdf45', 'lol100k5k', 'lol11', 'lol21', 'a1', 'lol2ggdf46'], key=key))
-
+print(sorted(['a1', 'a10', 'b', '0', '200'], key=key))
