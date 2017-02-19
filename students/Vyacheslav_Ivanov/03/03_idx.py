@@ -30,4 +30,4 @@ def get_idx(A):
         return 'The list is empty'
         
     
-print(get_idx([[1, 0, 0, 0], [1, 0, 1, 0], [1, 1, 0, 1], [1, 1, 1, 1]]))
+print(get_idx([[1, 0, 0, 1], [1, 0, 1, 0], [1, 1, 0, 1], [1, 1, 1, 1]]))
