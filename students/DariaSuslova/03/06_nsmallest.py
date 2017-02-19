@@ -1,11 +1,26 @@
-def QuickSort(A):
-    if A:
-        return QuickSort([x for x in A if x<A[0]]) + [x for x in A if x==A[0]] + QuickSort([x for x in A if x>A[0]])
-    return []
-    
+def partition(A, lo, hi):
+    pivot = A[hi]
+    i = lo
+
+    for j in range(lo, hi):
+        if A[j] <= pivot:
+            A[i], A[j] = A[j], A[i]
+            i += 1
+
+    A[i], A[hi] = A[hi], A[i]
+    return i
+
 def nsmallest(m, A):
-    q = QuickSort(A)
-    print (q[:m:])
+    i = 0
+    q = partition(A, 0, len(A)-1)
+    if i < q:
+        partition(A, 0, q-1)
+        i+=1
+    else:
+        partition(A, q+1, len(A)-1)
+        i+=1
+    
+    return A[:m:]
 
     
     """
@@ -15,4 +30,5 @@ def nsmallest(m, A):
     [21, 40, 44]
     """
 print(nsmallest(4,[44, 64, 21, 86, 40, 46, 95]))
+
 
