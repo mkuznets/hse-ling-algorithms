@@ -11,7 +11,6 @@ def partition(A, lo, hi, L):
 def three_sort(A):
     pivot = partition(A, 0, len(A)-1, 'B')
     partition(A, 0, pivot, 'W')
-    partition(A, pivot+1, len(A)-1, 'B')
     return A
 
 print(three_sort(['B', 'B', 'W', 'R', 'B', 'R', 'R', 'W', 'W', 'B', 'R', 'W', 'W', 'B', 'R', 'R']))
