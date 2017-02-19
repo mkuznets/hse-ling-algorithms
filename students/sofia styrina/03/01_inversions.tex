@@ -1,0 +1,88 @@
+%% LyX 2.1.1 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{amstext}
+\usepackage{babel}
+\begin{document}
+
+\section*{Problem 1}
+
+\[
+\pi(i,j):\quad i<j,\quad\pi_{i}>\pi_{j}
+\]
+
+
+Inversions in $\pi$
+
+n - number of elements,
+
+\[
+\text{number of inversions}\le\frac{n(n-1)}{2}
+\]
+
+
+Proof by induction:
+
+$n=2$, $\pi=(\pi_{1},\pi_{2})$ 
+
+W.L.O.G. assume that $\pi_{1}<\pi_{2}$. Then the number of inversions
+in $(\pi_{1},\pi_{2})$ equals 0, and the number of inversions in
+$(\pi_{2},\pi_{1})$ equals $1=\frac{2\times(2-1)}{2}$.
+
+If $\pi_{1}=\pi_{2}$, then the number of inversions in $(\pi_{1},\pi_{2})$
+and $(\pi_{2},\pi_{1})$ equals zero.
+
+\bigskip{}
+
+
+Therefore, for n = 2, number of inversions $\le\frac{n(n-1)}{2}$
+
+\bigskip{}
+
+
+$n=3$, $\pi=(\pi_{1},\pi_{2},\pi_{3})$, number of inversions = 0.
+
+$(\pi_{1},\pi_{3},\pi_{2}),$ number of inversions = 1.
+
+$(\pi_{2},\pi_{1},\pi_{3})$, number of inversions = 1.
+
+$(\pi_{2},\pi_{3},\pi_{1})$, number of inversions = 2.
+
+$(\pi_{3},\pi_{1},\pi_{2})$, number of inversions = 2.
+
+$(\pi_{3,}\pi_{2},\pi_{1})$, number of inversions = $3=\frac{3(3-1)}{2}$.
+
+\bigskip{}
+
+
+Consider $\pi=(\pi_{1},\pi_{2},\ldots,\pi_{n})$. Suppose that the
+statement holds for $n-1$. I want to prove that it holds for $n$
+as well. There are $n-1$ elements among $(\pi_{2},\ldots,\pi_{n})$.
+The number of inversions in $(\pi_{2},\ldots,\pi_{n})$ is therefore
+$\le\frac{(n-1)((n-1)-1)}{2}=\frac{(n-1)(n-2)}{2}$
+
+\bigskip{}
+
+
+Then, the number of in versions in $(\pi_{1},\pi_{2},\ldots,\pi_{n})\le\frac{(n-1)(n-2)}{2}+(n-1)$,
+with $(n-1)$ being the maximum additional number of inversions that
+can occur, if $\pi_{1}$ is greater than each of the $\pi_{2},\ldots,\pi_{n}$.
+
+\bigskip{}
+
+
+$\frac{(n-1)(n-2)}{2}+(n-1)=\frac{(n-1)(n-2)+2(n-1)}{2}=\frac{(n-1)(n-2+2)}{2}=\frac{n(n-1)}{2}$
+
+\bigskip{}
+
+
+Q.E.D.
+
+\bigskip{}
+
+
+Therefore, the number of inversions $=\frac{n(n-1)}{2}$, when all
+the elements are placed in strictly descending order.
+\end{document}
