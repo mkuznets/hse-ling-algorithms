@@ -1,0 +1,38 @@
+\documentclass[12pt]{extarticle}
+\usepackage{geometry,nopageno}
+\geometry{a5paper,left=1cm,right=1cm,top=1cm,bottom=1cm}
+\usepackage{cmap, type1ec}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+
+\usepackage{verbatim,nameref}
+\usepackage{amsmath,amsthm,amstext,amssymb,amscd,
+            mathtools,mathrsfs,dsfont}
+            
+\newtheorem*{problem}{Задача}
+
+\begin{document}
+
+\begin{problem}[1]
+{\em Инверсией} в перестановке $\pi$ называется пара индексов $(i,j)$ такая что $i<j$, но $\pi_i>\pi_j$. Докажите, что в перестановке из $n$ элементов может быть не более $n(n-1)/2$ инверсий. В какой перестановке количество инверсий ровно $n(n-1)/2$?
+\end{problem}
+
+\begin{proof}
+
+Предположим, что существует перестановка, в которой для каждой пары индексов $i, j$ выполнена инверсия, т.е. $i<j$, $\pi_i>\pi_j$.
+Сколько всего пар индексов в перестановке из $n$ элементов? Пара индексов - это {\em неупорядоченный} набор из двух элементов, выбираемый без повторений среди множества из $n$ номеров, поэтому это считается как число сочетаний $$C_n^2 = \frac{n(n-1)}{2}$$Больше пар быть не может, значит в перестановке с максимальным числом инверсий будет ровно $n(n-1)/2$ инверсий. Существуют также перестановки с меньшим числом инверсий. 
+
+Перестановка с максимальным числом инверсий единственна, вот она:
+$$
+\begin{pmatrix}
+    1 & 2 & 3 & ... & n-2 & n-1 & n \\
+    n & n-1 & n-2 & ... & 3 & 2 & 1
+\end{pmatrix}
+$$
+
+
+
+\end{proof}
+
+\end{document}
