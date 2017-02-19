@@ -11,14 +11,15 @@ def get_idx(A):
     1
     """
     i = 0
-    j = i+1
-    if A[i][j]==0:
-        j+=1
-    else:
-        i+=1
+    j = 0
+    while i != len(A) and j != len(A[i]):
+        if A[i][j]==0:
+            j+=1
+        else:
+            i+=1
     if j>i:
         return i
     else:
         return j
 
-print(get_idx([[0, 1, 0], [0, 1, 0], [1, 1, 1]]))
+print(get_idx([[0, 0, 1], [0, 0, 1], [0, 0, 1]]))
