@@ -16,12 +16,18 @@ def key(x):
             str_num += x[ind]
             ind += 1
         else:
-            str_num = ''
-            res.append(ord(x[ind].lower()))
+            if str_num != '':
+                res.append(int(str_num)+1000)
+                str_num = ''
+            res.append(ord(x[ind]))
             ind += 1
     if str_num != '':
-        res.append(int(str_num)+10000)
+        res.append(int(str_num)+1000)
     return res
 
-# print(sorted(['lol3llll23', 'a10', 'lol2ggdf45', 'lol100k5k', 'lol11', 'lol21', 'a1', 'lol2ggdf46'], key=key))
+# # print(sorted(['lol3llll23', 'a10', 'lol2ggdf45', 'lol100k5k', 'lol11', 'lol21', 'a1', 'lol2ggdf46'], key=key))
 # print(sorted(['a1', 'a10', 'b', '0', '200', '-1000', '1000000'], key=key))
+# print(sorted(['img9b12', 'img10a11', 'img10a', 'img10a10'], key=key))
+# print(sorted(['a1', 'a10', 'b', '0', '200'], key=key))
+# print(sorted(['a1', 'a10', 'b', '0', '1200'], key=key))
+# print(sorted(['img10a10', 'img10a11', 'img10a'], key=key))
