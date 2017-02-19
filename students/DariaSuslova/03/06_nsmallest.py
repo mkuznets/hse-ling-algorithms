@@ -1,24 +1,11 @@
-def partition(A, lo, hi):
-    pivot = A[hi]
-    i = lo
-
-    for j in range(lo, hi):
-        if A[j] <= pivot:
-            A[i], A[j] = A[j], A[i]
-            i += 1
-
-    A[i], A[hi] = A[hi], A[i]
-    return i
-
-def QuickSort(A, lo, hi):
-    if lo < hi:
-        p = partition(A, lo, hi)
-        QuickSort(A,lo,p-1)
-        QuickSort(A,p+1,hi)
-
+def QuickSort(A):
+    if A:
+        return QuickSort([x for x in A if x<A[0]]) + [x for x in A if x==A[0]] + QuickSort([x for x in A if x>A[0]])
+    return []
+    
 def nsmallest(m, A):
-    QuickSort(A, 0, len(A)-1)
-    return A[:m:]
+    q = QuickSort(A)
+    print (q[:m:])
 
     
     """
