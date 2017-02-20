@@ -4,6 +4,7 @@
 
 * [Оценки за задания](https://docs.google.com/spreadsheets/d/1Lwz38H7USB2HzAwjWA8EarTZ6FIvJI_kNmKAMUbJTaA/pubhtml?gid=0&single=true)
 * Как отправлять задания: [инструкция](meta/git_workflow.md), [видео](https://youtu.be/dpHrqlhC_NE)
+* [О подозрениях в списывании](meta/cheating.md)
 
 # Программа курса
 
