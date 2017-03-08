@@ -17,6 +17,8 @@ build
 *.htm
 *.html
 
+students/*/01
+
 *.aux
 *.bbl
 *.blg
