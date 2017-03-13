@@ -41,11 +41,15 @@
    * *Selection sort (как приквел к Heapsort)*
    * *Двоичная куча (Binary heap)*
    * *Heapsort*
-4. Двоичные деревья ([конспект](http://nbviewer.jupyter.org/github/mkuznets/hse-ling-algorithms/blob/master/lecture_notes/04_binary_search_trees.ipynb))
+4. Двоичные деревья ([конспект](http://nbviewer.jupyter.org/github/mkuznets/hse-ling-algorithms/blob/master/lecture_notes/04_1_bst.ipynb))
 	* *Определение, типы и характеристики узлов. Реализация структуры данных.*
 	* *Двоичное дерево поиска: свойство и алгоритмы:*
 		* *Поиск элемента*
 		* *Поиск минимума/максимума*
 		* *Обходы дерева: в глубину (pre-, in-, post-order), в ширину*
 		* *Поиск следующего и предыдущего значений*
+	* Вставка и удаление элементов
+	* Самобалансирующиеся деревья поиска (Self-Balancing BST)
+		* Красно-чёрное дерево (Red-Black Tree)
+		* B-tree
 5. [предварительно] Графы
