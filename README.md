@@ -63,6 +63,17 @@
 		* B-Tree: основная идея структуры данных и алгоритмов поиска/добавления элементов
 	* Суффиксные и префиксные деревья (tries)
 	* Абстрактные синтаксические деревья в компилятрах (Abstract Syntax Tree)
+	* **Материалы:**
+		* Внешняя память и B-Tree: CLRS, глава 18
+		* [Trie](https://en.wikipedia.org/wiki/Trie)
+			* [Про переносы слов в TeX](http://tex.stackexchange.com/a/262595) и его простая [реализация на Python](https://nedbatchelder.com/code/modules/hyphenate.py)
+		* [Suffix tree](https://en.wikipedia.org/wiki/Suffix_tree)
+			* Skiena, Section 12.3
+			* Построение за линейное время: Ukkonen's algorithm (для самостоятельного изучения)
+				* [Fast String Searching With Suffix Trees](http://marknelson.us/1996/08/01/suffix-trees/)
+				* D. Gusfield. *Algorithms on Strings, Trees, and Sequences: Computer Science and Computational Biology.* (1997)
+			* [Поиск всех вхождений подстроки](http://www.geeksforgeeks.org/suffix-tree-application-2-searching-all-patterns/)
+		* [Модуль ast](https://docs.python.org/3.6/library/ast.html/) в Python
 
 ## Модуль 4
 (программа уточняется)
