@@ -73,7 +73,6 @@
 				* [Fast String Searching With Suffix Trees](http://marknelson.us/1996/08/01/suffix-trees/)
 				* D. Gusfield. *Algorithms on Strings, Trees, and Sequences: Computer Science and Computational Biology.* (1997)
 			* [Поиск всех вхождений подстроки](http://www.geeksforgeeks.org/suffix-tree-application-2-searching-all-patterns/)
-		* [Модуль ast](https://docs.python.org/3.6/library/ast.html/) в Python
 
 ## Модуль 4
 (программа уточняется)
