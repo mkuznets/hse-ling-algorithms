@@ -5,6 +5,7 @@
 * [Оценки за задания](https://docs.google.com/spreadsheets/d/1Lwz38H7USB2HzAwjWA8EarTZ6FIvJI_kNmKAMUbJTaA/pubhtml)
 * Как отправлять задания: [инструкция](meta/git_workflow.md), [видео](https://youtu.be/dpHrqlhC_NE)
 * [О подозрениях в списывании](meta/cheating.md)
+* [Визуализатор алгоритмов](http://algo-visualizer.jasonpark.me)
 
 # Литература
 
@@ -17,7 +18,7 @@
 ## Модуль 3
 
 1. Анализ алгоритмов. Асимптотическое оценки вычислительной сложности.
-  ([семинар](https://mkuznets.com/hse/2017-alg/seminar01.pdf), [листок](https://mkuznets.com/hse/2017-alg/problems01.pdf))
+  ([семинар](https://mkuznets.com/hse/2017-alg/seminar01.pdf), [листок](https://mkuznets.com/hse/2017-alg/problems01.pdf), [решения](https://mkuznets.com/hse/2017-alg/solutions01.pdf))
 	* Вычислительная модель компьютера с памятью с произвольным доступом
 	* Операторы и выражения Python в терминах процессорных команд
 	* Классы O, Ω, Θ
@@ -38,7 +39,7 @@
 		* Цикл в связном списке
 		* Применения стека: поддержка рекурсии, скобочные выражения
 		* LRU-кэш
-3. Алгоритмы сортировки ([конспект](http://nbviewer.jupyter.org/github/mkuznets/hse-ling-algorithms/blob/master/lecture_notes/03_sorting.ipynb), [листок](problems/03))
+3. Алгоритмы сортировки ([конспект](http://nbviewer.jupyter.org/github/mkuznets/hse-ling-algorithms/blob/master/lecture_notes/03_sorting.ipynb), [листок](problems/03), [решения](https://github.com/mkuznets/hse-ling-algorithms/blob/master/problems/03/solutions.ipynb))
 	* Задача сортировки. Сортировки основанные на сравнениях (Comparison sort).
 	* Сортировка вставками (Insertion sort)
 	* Парадигма «разделяй и властвуй» (divide and conquer). Сортировка слиянием (Mergesort). Master theorem и её применение для оценки сложности.
@@ -78,11 +79,12 @@
 (программа уточняется)
 
 1. Парадигмы построения алгоритмов
-	* Жадные алгоритмы (greedy)
 	* Динамическое программирование (dynamic programming)
+		* Задача о разрезании стержны (rod cutting problem)
 		* Приближённое сравнение строк (расстояние Левенштейна)
 		* Нахождение максимальной общей подпоследовательности (longest common subsequence)
 		* Выравнивание текста
+	* Жадные алгоритмы (greedy)
 2. Графы
 	* Основные определения и виды графов
 	* Структуры данных: матрица смежности (adjacency matrix), списки смежных вершин (adjacency lists)
