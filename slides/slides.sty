@@ -1,0 +1,18 @@
+\usetheme{Warsaw}
+\setbeamertemplate{headline}{}
+
+\defbeamertemplate*{footline}{shadow theme}
+{%
+  \leavevmode%
+  \hbox{
+    \begin{beamercolorbox}[wd=.3\paperwidth,ht=2.5ex,dp=1.125ex, leftskip=.3cm plus1fil,
+                           rightskip=.3cm]{author in head/foot}%
+      \usebeamerfont{author in head/foot}%
+      \insertframenumber\,/\,\inserttotalframenumber\hfill\insertshortauthor
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.7\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,
+                           rightskip=.3cm plus1fil]{title in head/foot}%
+      \usebeamerfont{title in head/foot}\insertshorttitle%
+    \end{beamercolorbox}}%
+    \vskip0pt%
+}
