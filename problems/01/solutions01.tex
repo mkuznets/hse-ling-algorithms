@@ -1,0 +1,152 @@
+\documentclass[12pt]{extarticle}
+\usepackage{geometry,nopageno}
+\geometry{a4paper,left=1cm,right=1cm,top=1cm,bottom=1cm}
+\usepackage{cmap, type1ec}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+
+\usepackage{verbatim,nameref}
+\usepackage{amsmath,amsthm,amstext,amssymb,amscd,
+            mathtools,mathrsfs,dsfont}
+            
+
+\providecommand{\abs}[1]{\left\lvert{#1}\right\rvert}
+
+\begin{document}
+
+\begin{center}
+\textbf{\LARGE{Теория алгоритмов}}\\
+\textbf{\Large{Листок 1: решения}}\\
+BSc, компьютерная лингвистика, НИУ ВШЭ\\
+\end{center}
+
+
+\section{Асимптотические оценки функций}
+
+\begin{enumerate}
+
+  \item\,[4] Определения:
+  
+    $$
+    \begin{aligned}
+    f(n) \in O(g(n)): &~ \exists c_1 ~~ \exists n_0 ~~ \forall n > n_0 ~\to~ f(n) \leqslant c_1 \cdot g(n) \\
+    f(n) \in \Omega(g(n)): &~ \exists c_2>0 ~~ \exists n_0 ~~ \forall n > n_0 ~\to~ f(n) \geqslant c_2 \cdot g(n) \\
+    f(n) \in \Theta(g(n)): &~ f(n) \in O(g(n)) ~~\&~~ f(n) \in \Omega(g(n))
+    \end{aligned}
+    $$
+  
+    \begin{enumerate}
+      \item Оценим функцию сверху. Заметим что $\log_k{n} \geqslant 1$ при $n \geqslant k$, следовательно:
+      $$
+      f(n) = 5n\log_k{n} + 3n + 1 \leqslant
+      5n\log_k{n} + 3n\log_k{n} + n\log_k{n} \leqslant
+      10n\log_k{n}
+      $$
+      
+      То есть
+      $$
+      \exists C = 10 ~~ \exists n_0 = k ~~ \forall n > n_0 ~\to~ f(n) \leqslant C \cdot n\log_k{n}
+      $$
+      следовательно $f(n) \in O(n\log_k{n})$
+      
+      \item $\log_{2} n < n$ при $n > 0$, отсюда
+      $$
+      \exists C = 1 ~~ \exists n_0 = 1 ~~ \forall n > n_0 = 0 ~\to~ n^2 \geqslant C \cdot n\log_2{n}
+      $$
+      откуда следует что $n^2 \in \Omega(n \log n)$.
+
+      \item Предположим что $f(n) \in O(g(n)) ~\Rightarrow~ g(n) \in O(f(n))$. Тогда
+      $$
+      \begin{gathered}
+      \exists c_1, c_2 ~~ \forall n > \max(n_1, n_2)\\
+      f(n) \leqslant c_1 g(n) ~\Rightarrow~  g(n) \leqslant c_2 f(n)
+      \end{gathered}
+      $$
+      При этом можно предоставить контрпример, когда выполняется только первое из неравенств, например $f(n)=n$ и $g(n)=n^2$. Следовательно исходное предположение не верно.
+
+      \item Пусть $f(n) \in \Theta(g(n))$:
+      $$
+      \exists c_1, c_2 ~~ \exists n_0 ~~ \forall n > n_0 ~\to~ c_1 g(n) \leqslant f(n) \leqslant c_2 g(n) \\
+      $$
+
+      Отсюда
+      $$
+      \exists c'_1=\frac{1}{c_1}, c'_2=\frac{1}{c_2} ~~ \exists n_0 ~~ \forall n > n_0
+      ~\to~ c'_2 f(n) \leqslant g(n) \leqslant c'_1 f(n) \\
+      $$
+
+      Следовательно и $g(n) \in \Theta(f(n))$
+    \end{enumerate}
+
+  \item Требуется доказать, что $(n+a)^b$ принадлежит одновременно $O(n^b)$ и $\Omega(n^b)$.
+  
+  $n+a < 2n$ при $n > \abs{a} = n_0$. Возведём обе части выражения в степень $b$:
+    $$
+    (n+a)^b < 2^b n^b = C_1 \cdot n^b
+    $$ Следовательно $(n+a)^b \in O(n^b)$
+    
+    $n+a > n/2$ при $n > 3\abs{a}/2 = n_0$. Возводя в степень $b$:
+    $$
+    (n+a)^b > \frac{n^b}{2^b} = C_2 \cdot n^b
+    $$ Следовательно $(n+a)^b \in \Omega(n^b)$
+
+  \item
+
+    $$
+    \lim_{n\to\infty} \frac{\log n}{n^a} = \lim_{n\to\infty} \frac{(\log n)'}{(n^a)'}
+    = \lim_{n\to\infty} \frac{1}{an^a} = 0
+    $$
+    Следовательно, $\log n \in O(n^a)$
+\end{enumerate}
+
+
+\section{Оценка времени работы алгоритма}
+
+
+\begin{enumerate}
+
+  \item Время работы алгоритма $O(n)$, т.к. единственный цикл выполняет $n$ итераций, время каждой из которой не зависит от $n$, а значит может быть оценено сверху константой.
+  
+  Алгоритма с лучшей временной асимптотикой не существует, но есть схема Горнера, которая заменяет два умножения в теле цикла на одно. Она использует тот факт что многочлен можно переписать в виде:
+  $$
+  p(x) = \sum_{i=0}^{n} a_i x^i = a_0 + x(a_1 + x(a_2 + \cdots + x(a_{n-1} + a_n x)))
+  $$
+  
+  Код для вычисления этого выражения будет выглядеть так:
+  \begin{verbatim}
+      def polynomial(a, n, x):
+          p = 0
+          for i in range(n):
+              p = p * x + a[i]
+          return p
+  \end{verbatim}
+
+
+  \item[3.] Рассмотрим количество полных итераций цикла как случайную величину $T$. Её значение зависит от количества стоящих подряд нулей в старших разрядах числа: после первой встреченной единицы цикл завершается. Обозначим биты числа как $B_i$, где $B_0$ будет означать младший бит, а $B_{n-1}$ -- старший.
+  
+  Рассмотрим вероятности каждого из значений $T$:
+    \begin{equation}
+    \begin{aligned}
+    P[T=0]    & =  1 \\
+    P[T=1]    & =  P[B_{n-1}=0] = \frac{1}{2} \\
+    P[T=2]    & =  P[B_{n-1}=0 ~\&~ B_{n-2}=0] = P[B_{n-1}=0] \cdot P[B_{n-2}=0] = \frac{1}{4} \\
+    \cdots \\
+    P[T=n]    & =  P[B_{i}=0,~ i = \overline{0,n-1}] = \frac{1}{2^n}  \\
+    \end{aligned}
+    \end{equation}
+    
+  Здесь мы использовали тот факт, что значение каждого из битов выставляется независимо, а значит вероятность совместных событий (получить 0 сразу в двух и более битах) равна произведению вероятностей получить 0 в каждом из битов, которая в свою очередь равна $1/2$.
+  
+  $E[T]$ вычисляется как сумма произведений значений величины на вероятность этих значений:
+  
+  $$
+  E[T] = 0 \cdot 1 + 1 \cdot \frac{1}{2} + \cdots + n \cdot \frac{1}{2^n}
+  = \sum_{i=0}^{n} \frac{i}{2^i} \approx 2
+  $$
+  
+  Обратите внимание, что это значительно ниже оценки в худшем случае (т.е. $n$ итераций)
+\end{enumerate}
+
+
+\end{document}
