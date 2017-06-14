@@ -7,5 +7,6 @@ def flatten(root):
             while p.right is not None:
                 p = p.right
             p.right, root.right, root.left = root.right, root.left, None
+            return root
      else:
         return 
