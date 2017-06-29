@@ -1,3 +1,7 @@
+from binarytree import tree, bst, pprint, inspect, convert
+my_bst = convert([8, 4, 12, 2, 6, 10, 14, 1, 3, 5, 7, 9, 11, 13, 15])
+pprint(my_bst)
+
 class Node:
     def __init__(self, value):
         self.right = None
@@ -5,23 +9,21 @@ class Node:
         self.value = value
         self.parent = None
 
-def find_max(self, node):
+def find_max(node):
     if node is None:
         return
-    if node.right:
-        find_max(node.right)
-    elif node.right is None:
-        return node
-    
-def find_min(self, node):
+    while node.right:
+        node = node.right
+    return node
+
+def find_min(node):
     if node is None:
         return
-    if node.left:
-        find_min(node.left)
-    elif node.left is None:
-        return node
-            
-def set_parents(self, node):
+    while node.left:
+        node = node.left
+    return node
+
+def set_parents(node):
     if node is None:
         return
     if node.left:
@@ -31,28 +33,37 @@ def set_parents(self, node):
         node.right.parent = node
         set_parents(node.right)
 
-# первым node считаем root
-#и считаем, что set_parents() уже была применена
-
-def flatten(self, node):
+def flatten(node, min_node):
     if node is None:
         return
-    par = node.parent
+    root = None
     if node.left:
-        if node.left.right:
-            m_node = find_max(node.left)
+        l_node = node.left
+        m_node = find_max(node.left)
+        if m_node is not l_node:
+            if node.parent is not None: 
+                node.parent.right = l_node
+                l_node.parent = node.parent
+            else:
+                l_node.parent = None
             m_node.right = node
-            par.right = m_node 
-        elif node.left.right is None:
-            node.left.right = node
-            par.right = node.left.right
-            flatten(node.left)
-    elif node.left is None:
-        if node.right.left:
-            m_node = find_min(node.right)
-            m_node.right = node.right
-            m_node.parent = node
-        elif node.right.left is None:
-            flatten(node.right)
-    return node
-            
+            node.left = None
+            flatten(l_node, min_node)
+        elif m_node is l_node:
+            if node.parent is not None:
+                node.parent.right = m_node
+                m_node.parent = node.parent
+            else:
+                node.parent = None
+            m_node.right = node
+            node.parent = m_node
+            node.left = None
+    if node.right:
+        flatten(node.right, min_node)
+    return min_node
+
+set_parents(my_bst)
+my_bst.parent = None
+
+root = find_min(my_bst)
+pprint(flatten(my_bst, root)) #если не добавить root, то дерево будет разворачиваться только с изначального корня, в данном случае с 7
