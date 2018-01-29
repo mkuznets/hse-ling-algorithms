@@ -3,7 +3,6 @@
 Курс для студентов 3-го года программы [Фундаментальная и компьютерная лингвистика](https://www.hse.ru/ba/ling/)
 
 * [Оценки за задания](https://docs.google.com/spreadsheets/d/e/2PACX-1vRkI9ORu_drRCs7EGCNriny9_zrseHFBuIl8-aJt--NMskHg1jj7LWojfsCNxhqDmsZjIbcsa42MvN2/pubhtml)
-* Как отправлять задания: [инструкция](meta/git_workflow.md), [видео](https://youtu.be/dpHrqlhC_NE)
 * [О подозрениях в списывании](meta/cheating.md)
 * [Визуализатор алгоритмов](http://algo-visualizer.jasonpark.me)
 
