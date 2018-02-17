@@ -42,17 +42,25 @@
 		* Вычисление минимума/максимума за O(1).
 		* Реализация через кольцевой буфер.
 	* Ссылочные структуры данных
-		* Связные списки, деревья, двухсторонная очередь.
-		* Задача о цикле в связном списке.
-	* Битовые массивы
-	* Хэш-таблицы
-		* Разрешение коллизий: цепочки, открытая адресация.
+		* Одно- и двусвязные списки. Двухсторонняя очередь как двусвязный список.
+	* Битовые массивы *([[1]](bit-array-wiki), [[2]](bit-array-py))*
+	* Хэширование и хэш-таблицы *(Бабенко, 5.1-5.3, CLRS 11)*
+		* Разрешение коллизий: цепочки, открытая адресация (linear probing, double hashing).
+		* Защита от намеренных коллизий через universal hashing *(CLRS 11.3.3)*.
+		* Feature hashing (hashing trick) *([[1]](fh-wiki),[[2]](fh-sklearn))*
+		* LRU кэш как пример комбинации хэш-таблицы и двухсвязного списка.
 
 3. Алгоритмы сортировки.
 	* ???
 
 4. Структуры данных поиска
     * ???
+
+[bit-array-wiki]: https://en.wikipedia.org/wiki/Bit_array
+[bit-array-py]: https://wiki.python.org/moin/BitArrays
+[fh-wiki]: https://en.wikipedia.org/wiki/Feature_hashing
+[fh-sklearn]: http://scikit-learn.org/stable/modules/feature_extraction.html#feature-hashing
+
 
 ## Контрольная
 
