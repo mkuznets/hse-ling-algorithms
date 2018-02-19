@@ -1,0 +1,55 @@
+\documentclass[12pt,a4paper]{report}
+% \textheight = 30cm
+% \voffset = -36pt
+\footskip = 0cm
+
+\usepackage{cmap}
+\usepackage{type1ec}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+
+\usepackage{amsmath,amstext,amssymb}
+\usepackage{fullpage}
+
+\usepackage{enumitem}
+\usepackage{ifpdf}
+\ifpdf
+  \usepackage[pdftex]{graphicx}
+  \usepackage[pdftex,unicode,bookmarks=false]{hyperref}
+
+  \pdfminorversion=5
+  \pdfcompresslevel=9
+  \pdfobjcompresslevel=9
+\fi
+
+\pagestyle{empty}
+
+
+% Константа
+\def\const{\mathop{\mathrm{const}}\nolimits}
+
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{}
+
+\begin{document}
+
+\begin{center}
+\textbf{\large{Теория алгоритмов. Листок 2}}\\
+BSc, компьютерная лингвистика, НИУ ВШЭ\\
+Выдан: 20 февраля 2018\\
+\end{center}
+
+\begin{enumerate}
+  \item\,[{\tt vector\_copy}] Рассмотрим динамический массив, размер которого увеличивается в $\alpha$ раз при добавлении очередного элемента в целиком заполненный массив. Для $\alpha=2$ посчитайте, сколько операций копирования совершается при добавлении $n$ элементов в изначально пустой массив.
+
+  {\it (Одной операцией считается копирование одного элемента массива. В задаче предполагается явный подсчёт, без использования <<метода бухучёта>> и асимптотических оценок.)}
+
+  \item\,[{\tt vector\_alpha}] Покажите, что оценка $O(n)$ общего времени выполнения $n$ операций вставки в динамический массив остаётся справедливой для любого другого $\alpha > 1$.
+
+  \item\,[{\tt two\_stacks\_amortized}] На занятиях рассматривалась реализация очереди с помощью двух стеков. Используя <<метода бухучёта>>, докажите амортизированную временную сложность операций {\tt pop} и {\tt push} в такой очереди.
+
+  \item\,[{\tt stacks\_array}] Опишите реализацию {\em двух} стеков с помощью {\em одного} массива размера $n$. Ни один из стеков не должен переполняться, если общее число элементов в стеках не превышает $n$. Операции {\tt pop} и {\tt push} должны гарантированно выполняться за $O(1)$.
+\end{enumerate}
+
+\end{document}
