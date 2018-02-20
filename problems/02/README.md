@@ -2,7 +2,7 @@
 
 * Теоретическая часть: [PDF](https://mkuznets.com/hse/2018-alg/problems_02.pdf)
 * Практическая часть: https://repl.it/classroom/invite/M0Lt4Ei
-* [Текущие максимальные оценки за задачи](https://docs.google.com/spreadsheets/d/1Lwz38H7USB2HzAwjWA8EarTZ6FIvJI_kNmKAMUbJTaA/pubhtml)
+* [Текущие максимальные оценки за задачи](https://docs.google.com/spreadsheets/d/e/2PACX-1vRkI9ORu_drRCs7EGCNriny9_zrseHFBuIl8-aJt--NMskHg1jj7LWojfsCNxhqDmsZjIbcsa42MvN2/pubhtml#) (вкладка Problems)
 
 * Выдано: 2018-02-20
 * Каждую последующую неделю максимально возможная оценка будет домножаться на 0.8
