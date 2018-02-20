@@ -2,7 +2,7 @@
 
 Курс для студентов 3-го года программы [Фундаментальная и компьютерная лингвистика](https://www.hse.ru/ba/ling/)
 
-* [Оценки за задания](https://docs.google.com/spreadsheets/d/e/2PACX-1vRkI9ORu_drRCs7EGCNriny9_zrseHFBuIl8-aJt--NMskHg1jj7LWojfsCNxhqDmsZjIbcsa42MvN2/pubhtml)
+* [Задачи и текущие оценки](https://docs.google.com/spreadsheets/d/e/2PACX-1vRkI9ORu_drRCs7EGCNriny9_zrseHFBuIl8-aJt--NMskHg1jj7LWojfsCNxhqDmsZjIbcsa42MvN2/pubhtml)
 * [О подозрениях в списывании](meta/cheating.md)
 * [Визуализатор алгоритмов](http://algo-visualizer.jasonpark.me)
 
@@ -31,7 +31,7 @@
 	* Сравнение темпов роста функций. Типичные для анализа алгоритмов асимптотические классы.
 	* Примеры: возведение в целую степень, числа Фибоначчи, умножение Карацубы.
 
-2. Базовые структуры данных.
+2. Базовые структуры данных. [задание](problems/02)
 	* Массивы
 		* Статический массив. Многомерный случай. Хранение разреженных матриц (CSR format) [[1]](https://en.wikipedia.org/wiki/Sparse_matrix#Compressed_sparse_row_(CSR,_CRS_or_Yale_format)).
 		* Динамический массив (вектор) *(Skiena 3.1.1, Бабенко 1.1)*.
