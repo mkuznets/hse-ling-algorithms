@@ -38,7 +38,7 @@
 		* Цикл в связном списке
 		* Применения стека: поддержка рекурсии, скобочные выражения
 		* LRU-кэш
-3. Алгоритмы сортировки ([конспект](http://nbviewer.jupyter.org/github/mkuznets/hse-ling-algorithms/blob/master/lecture_notes/03_sorting.ipynb), [задание](problems/03), [решения](https://github.com/mkuznets/hse-ling-algorithms/blob/master/problems/03/solutions.ipynb))
+3. Алгоритмы сортировки ([конспект](http://nbviewer.jupyter.org/github/mkuznets/hse-ling-algorithms/blob/2017-spring/lecture_notes/03_sorting.ipynb), [задание](problems/03), [решения](http://nbviewer.jupyter.org/github/mkuznets/hse-ling-algorithms/blob/2017-spring/problems/03/solutions.ipynb))
 	* Задача сортировки. Сортировки основанные на сравнениях (Comparison sort).
 	* Сортировка вставками (Insertion sort)
 	* Парадигма «разделяй и властвуй» (divide and conquer). Сортировка слиянием (Mergesort). Master theorem и её применение для оценки сложности.
@@ -48,7 +48,7 @@
 	* Двоичная куча (Binary heap)
 	* Heapsort
 4. Двоичные деревья ([задание](problems/04))
-	* Определения, реализация, операции поиска ([конспект](http://nbviewer.jupyter.org/github/mkuznets/hse-ling-algorithms/blob/master/lecture_notes/04_1_bst.ipynb))
+	* Определения, реализация, операции поиска ([конспект](http://nbviewer.jupyter.org/github/mkuznets/hse-ling-algorithms/blob/2017-spring/lecture_notes/04_1_bst.ipynb))
 		* Поиск элемента
 		* Поиск минимума/максимума
 		* Обходы дерева: в глубину (pre-, in-, post-order), в ширину
