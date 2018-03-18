@@ -52,7 +52,7 @@
 		* Feature hashing (hashing trick) [[1]](https://en.wikipedia.org/wiki/Feature_hashing),[[2]](http://scikit-learn.org/stable/modules/feature_extraction.html#feature-hashing)
 		* LRU кэш как пример комбинации хэш-таблицы и двухсвязного списка.
 
-3. Алгоритмы сортировки.
+3. Алгоритмы сортировки. [задание](problems/03)
     * Задача сортировки. Сортировки основанные на сравнениях (Comparison sort).
     * Сортировка пузырьком (Bubble sort).
     * Сортировка вставками (Insertion sort)
