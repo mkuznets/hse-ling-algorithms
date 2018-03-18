@@ -1,0 +1,86 @@
+\documentclass[12pt,a4paper]{report}
+% \textheight = 30cm
+% \voffset = -36pt
+\footskip = 0cm
+
+\usepackage{cmap}
+\usepackage{type1ec}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+
+\usepackage{amsmath,amstext,amssymb}
+\usepackage{fullpage}
+
+\usepackage{enumitem}
+\usepackage{ifpdf}
+\ifpdf
+  \usepackage[pdftex]{graphicx}
+  \usepackage[pdftex,unicode,bookmarks=false]{hyperref}
+
+  \pdfminorversion=5
+  \pdfcompresslevel=9
+  \pdfobjcompresslevel=9
+\fi
+
+\pagestyle{empty}
+
+% Константа
+\def\const{\mathop{\mathrm{const}}\nolimits}
+
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{}
+
+\begin{document}
+
+\begin{center}
+\textbf{\large{Теория алгоритмов. Листок 3}}\\
+BSc, компьютерная лингвистика, НИУ ВШЭ\\
+Выдан: 18 марта 2018\\
+\end{center}
+
+{\bf N.B.: каждая задача подразумевает наличие подробного решения и/или доказательства, предшествующего ответу. В противном случае задача не будет засчитана.}
+
+\begin{enumerate}
+  \item\,[{\tt recurrences}] Для каждой рекуррентной формулы получите асимптотическое решение с помощью Master Theorem, либо укажите, что теорему нельзя применить (и почему).
+
+  \begin{enumerate}
+    \item $T(n) = 2T(n/4) + \lg n$
+    \item $T(n) = 3T(n/4) + n \lg n$
+    \item $T(n) = T(n/2) + T(n/4) + n^2$
+    \item $T(n) = 7T(n/2) + n^2$
+    \item $T(n) = 3T(n/3) + n/2$
+  \end{enumerate}
+
+  \item\,[{\tt long\_mult}] Оцените временную сложность умножения {\em столбиком} двух $n$-разрядных целых чисел. Сложение и умножение одноразрядных чисел следует считать выполняющимися за константное время.
+
+  {\em (В этой и следующей задачах предполагается, что мы имеем дело только с десятичной системой счисления.)}
+
+  \item\,[{\tt karatsuba}] \href{https://en.wikipedia.org/wiki/Karatsuba_algorithm}{Алгоритм Карацубы} позволяет перемножить целые числа быстрее, чем с помощью умножения столбиком. Пусть даны два $n$-разрядных числа $x$ и $y$. Выберем $m<n$, например $m = \lceil n/2 \rceil$. Разложим множители:
+  $$
+  \begin{gathered}
+  x = x_1 \cdot 10^m + x_0\\
+  y = y_1 \cdot 10^m + y_0
+  \end{gathered}
+  $$
+
+  Запишем произведение:
+  $$
+  \boxed{xy} = (x_1 \cdot 10^m + x_0)(y_1 \cdot 10^m + y_0)
+       \equiv \boxed{z_2 \cdot 10^{2m} + z_1 \cdot 10^{m} + z_0}
+  $$%
+  %
+  где%
+  $$
+  \begin{gathered}
+  z_0 = x_0 y_0   ~~~~~~~~~~  z_2 = x_1 y_1\\
+  z_1 = x_1 y_0 + x_0 y_1 \equiv (x_1 + x_0)(y_1 + y_0) - z_2 - z_0
+  \end{gathered}
+  $$%
+
+  Таким образом, задача умножения $n$-разрядных чисел сведена к трём умножениям $n/2$-разрядных чисел и операциям сложения. Рекурсивно применяем к этим умножениям алгоритм Карацубы, и получаем ответ.
+
+  Получите асимптотику временной сложности этого алгоритма.
+\end{enumerate}
+
+\end{document}
