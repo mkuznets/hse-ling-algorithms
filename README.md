@@ -2,7 +2,7 @@
 
 Курс для студентов 3-го года программы [Фундаментальная и компьютерная лингвистика](https://www.hse.ru/ba/ling/)
 
-* [Задачи и текущие оценки](https://docs.google.com/spreadsheets/d/e/2PACX-1vRkI9ORu_drRCs7EGCNriny9_zrseHFBuIl8-aJt--NMskHg1jj7LWojfsCNxhqDmsZjIbcsa42MvN2/pubhtml)
+* [Задачи и текущие оценки](https://docs.google.com/spreadsheets/d/1n9xO6Xiv2drsYa-CF_pgQq_zv3Sh6b2_wfEEEh6aPEs/edit?usp=sharing)
 * [О подозрениях в списывании](meta/cheating.md)
 * [Визуализатор алгоритмов](http://algo-visualizer.jasonpark.me)
 
