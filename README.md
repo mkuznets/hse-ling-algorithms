@@ -23,7 +23,7 @@
 
 ## Модуль 3
 
-1. **Анализ алгоритмов. Асимптотическое оценки вычислительной сложности.** [задание](problems/01)
+1. **Анализ алгоритмов. Асимптотическое оценки вычислительной сложности.** ([задание](problems/01))
 
   * Вычислительная модель (Word RAM model)
   * Понятие элементарных с точки зрения процессора операций
@@ -32,7 +32,7 @@
   * Сравнение темпов роста функций. Типичные для анализа алгоритмов асимптотические классы.
   * Примеры: возведение в целую степень, числа Фибоначчи, умножение Карацубы.
 
-2. **Базовые структуры данных.** [задание](problems/02)
+2. **Базовые структуры данных.** ([задание](problems/02))
 
   * Массивы
     * Статический массив. Многомерный случай. Хранение разреженных матриц (CSR format) [[1]](https://en.wikipedia.org/wiki/Sparse_matrix#Compressed_sparse_row_(CSR,_CRS_or_Yale_format)).
@@ -54,7 +54,7 @@
     * Feature hashing (hashing trick) [[1]](https://en.wikipedia.org/wiki/Feature_hashing),[[2]](http://scikit-learn.org/stable/modules/feature_extraction.html#feature-hashing)
     * LRU кэш как пример комбинации хэш-таблицы и двухсвязного списка.
 
-3. **Алгоритмы сортировки.** [задание](problems/03)
+3. **Алгоритмы сортировки.** ([частичный конспект](http://nbviewer.jupyter.org/github/mkuznets/hse-ling-algorithms/blob/2017-spring/lecture_notes/03_sorting.ipynb), [задание](problems/03))
 
   * Задача сортировки. Сортировки основанные на сравнениях (Comparison sort).
   * Сортировка пузырьком (Bubble sort).
@@ -71,14 +71,13 @@
 ## Контрольная
 
 Состоялась 27 марта 2018 в 12:10
-
-* [Задания](https://mkuznets.com/hse/2018-alg/midterm.pdf)
+* [Задачи](https://mkuznets.com/hse/2018-alg/midterm.pdf)
 
 ## Модуль 4
 
 1. **Структуры данных поиска**
   * Двоичные деревья поиска (binary search trees):
-    * Определения, реализация, операции поиска
+    * Определения, реализация, операции поиска ([конспект](http://nbviewer.jupyter.org/github/mkuznets/hse-ling-algorithms/blob/2017-spring/lecture_notes/04_1_bst.ipynb))
       * Поиск элемента
       * Поиск минимума/максимума
       * Обходы дерева: в глубину (pre-, in-, post-order), в ширину
