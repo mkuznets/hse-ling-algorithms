@@ -14,11 +14,6 @@
 * Бабенко, Левин *Введение в теорию алгоритмов и структур данных*
 * D. Gusfield. *Algorithms on Strings, Trees, and Sequences: Computer Science and Computational Biology.* (1997)
 
-# Конспект лекций
-
-[PDF](https://mkuznets.com/hse/2018-alg/lecture_notes.pdf)
-
-
 # Программа курса
 
 ## Модуль 3
@@ -114,7 +109,9 @@
       * от одной вершины (Bellman–Ford, Dijkstra)
       * между всеми вершинами (Floyd–Warshall algorithm)
 
-4. **Алгоритмы на строках.**
-  * ???
+4. **Алгоритмы на строках.** *(предварительно)*
+  * [Prefix tree (Trie)](https://en.wikipedia.org/wiki/Trie)
+    * [Про переносы слов в TeX](http://tex.stackexchange.com/a/262595) и его простая [реализация на Python](https://nedbatchelder.com/code/modules/hyphenate.py)
+  * [Suffix tree](https://en.wikipedia.org/wiki/Suffix_tree) *(Skiena, Section 12.3)*
 
 ## Экзамен
