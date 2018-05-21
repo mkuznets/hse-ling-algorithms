@@ -70,7 +70,7 @@
 
 ## Модуль 4
 
-1. **Структуры данных поиска**
+4. **Структуры данных поиска**
 
   * Двоичные деревья поиска (binary search trees):
     * Определения, реализация, операции поиска ([конспект](http://nbviewer.jupyter.org/github/mkuznets/hse-ling-algorithms/blob/2017-spring/lecture_notes/04_1_bst.ipynb))
@@ -84,7 +84,7 @@
         * Операции вращения
         * Красно-чёрное дерево (red-black tree): свойства, доказательство логарифмической высоты, алгоритм добавления элемента.
 
-2. **Парадигмы построения алгоритмов.**
+5. **Парадигмы построения алгоритмов.**
 
   * Жадное программирование
     * Подбор сдачи минимальным количеством монет [[1]](https://en.wikipedia.org/wiki/Change-making_problem#Greedy_method)
@@ -96,7 +96,7 @@
     * Числа Фибоначчи как задача динамического программирования *(Skiena 8.1)*
     * Расстояние редактирование (edit distance) на примере метрики Левенштейна: top-down и bottom-up реализации *([код с семинара](http://nbviewer.jupyter.org/github/mkuznets/hse-ling-algorithms/blob/master/lecture_notes/edit_distance.ipynb))*
 
-3. **Алгоритмы на графах.**
+6. **Алгоритмы на графах.**
     * Основные определения и виды графов
     * Структуры данных: матрица смежности (adjacency matrix), списки смежных вершин (adjacency lists)
     * Поиск: в ширину, в глубину (depth-/breadth-first search)
@@ -109,7 +109,7 @@
       * от одной вершины (Bellman–Ford, Dijkstra)
       * между всеми вершинами (Floyd–Warshall algorithm)
 
-4. **Алгоритмы на строках.** *(предварительно)*
+7. **Алгоритмы на строках.** *(предварительно)*
   * [Prefix tree (Trie)](https://en.wikipedia.org/wiki/Trie)
     * [Про переносы слов в TeX](http://tex.stackexchange.com/a/262595) и его простая [реализация на Python](https://nedbatchelder.com/code/modules/hyphenate.py)
   * [Suffix tree](https://en.wikipedia.org/wiki/Suffix_tree) *(Skiena, Section 12.3)*
