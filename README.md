@@ -102,12 +102,19 @@
     * Расстояние редактирование (edit distance) на примере метрики Левенштейна: top-down и bottom-up реализации *([код с семинара](http://nbviewer.jupyter.org/github/mkuznets/hse-ling-algorithms/blob/master/lecture_notes/edit_distance.ipynb))*
 
 3. **Алгоритмы на графах.**
-  * ???
+    * Основные определения и виды графов
+    * Структуры данных: матрица смежности (adjacency matrix), списки смежных вершин (adjacency lists)
+    * Поиск: в ширину, в глубину (depth-/breadth-first search)
+    * Топологическая сортировка (topological sort).
+    * Union-Find ([структуры данных для непересекающихся множеств](https://en.wikipedia.org/wiki/Disjoint-set_data_structure), *CLRS 21*)
+    * Минимальное покрывающее дерево (minimum spanning tree, MST)
+      * Обобщённый жадный алгоритм построения MST через разрезы *(без доказательства, CLRS 23.1)*
+      * Алгоритмы Краскала и Прима *(CLRS 23.2)*
+    * Поиск кратчайших путей
+      * от одной вершины (Bellman–Ford, Dijkstra)
+      * между всеми вершинами (Floyd–Warshall algorithm)
 
 4. **Алгоритмы на строках.**
-  * ???
-
-5. Что-нибудь специфичное для лингвистики/численных методов/баз данных
   * ???
 
 ## Экзамен
