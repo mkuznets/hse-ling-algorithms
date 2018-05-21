@@ -1,4 +1,53 @@
-\chapter{Сложность алгоритмов}
+\documentclass[12pt,a4paper]{report}
+\footskip = 1cm
+
+\usepackage{cmap}
+\usepackage{type1ec}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{pgffor}
+\usepackage{calc}
+\usepackage{fmtcount}
+
+\usepackage{amsmath,amstext,amssymb,amsthm}
+\usepackage{fullpage}
+
+\usepackage{ifpdf}
+\ifpdf
+  \usepackage[pdftex]{graphicx}
+  \usepackage[pdftex,unicode,bookmarks=false]{hyperref}
+
+  \pdfminorversion=5
+  \pdfcompresslevel=9
+  \pdfobjcompresslevel=9
+\fi
+
+\pagestyle{empty}
+
+\graphicspath{{./figures/}}
+
+\DeclareMathOperator{\EX}{\mathbb{E}}
+
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{}
+
+% Константа
+\def\const{\mathop{\mathrm{const}}\nolimits}
+
+% Модуль
+\providecommand{\abs}[1]{\left\lvert{#1}\right\rvert}
+
+
+\newtheorem*{definition}{Определение}
+\newtheorem*{example}{Пример}
+\newtheorem*{property}{Свойство}
+\newtheorem*{problem}{Задача}
+
+\begin{document}
+
+
+\chapter*{Сложность алгоритмов}
 
 {\em Алгоритм} -- в очень узком смысле -- спецификация решения задачи с помощью компьютера, подразумевающей преобразование входных данных в выходные. Строгость такой спецификации должна быть достаточной для создания компьютерной программы (реализации алгоритма), решающей эту задачу.
 
@@ -14,7 +63,7 @@
 
 % --------------------------------------------------------------------------------------
 
-\section{Word RAM model}
+\section*{Word RAM model}
 
 Модель аппроксимирует устройство всех современных компьютеров с достаточной для наших целей точностью.
 
@@ -73,7 +122,7 @@ A[i] = t + 3         add r2, 3 -> r3         # t + 3
 \end{itemize}
 
 
-\section{Временная сложность алгоритма}
+\section*{Временная сложность алгоритма}
 
 Здесь и далее буква $t$ обозначает абсолютное время работы алгоритма:
 $$
@@ -117,7 +166,7 @@ $$
 
 Для таких оценок используется {\em асимптотический анализ}.
 
-\section{Асимптотический анализ}
+\section*{Асимптотический анализ}
 
 \subsection*{Оценка сверху}
 
@@ -277,3 +326,5 @@ $$
 \subsection*{Итог}
 
 Время работы и потребление памяти не оценивается в абсолютных единицах, поскольку они могут варьироваться в зависимости от языка программирования, компьютера и многих деталей реализации. Вместо этого ресурсы оцениваются асимптотическими классами, которые можно сранивать не оглядываясь на конкретные реализации.
+
+\end{document}

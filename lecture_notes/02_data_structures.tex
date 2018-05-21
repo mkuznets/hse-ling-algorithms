@@ -1,8 +1,57 @@
-%!TEX root = lecture_notes.tex
+\documentclass[12pt,a4paper]{report}
+\footskip = 1cm
 
-\chapter{Data Structures}
+\usepackage{cmap}
+\usepackage{type1ec}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{pgffor}
+\usepackage{calc}
+\usepackage{fmtcount}
 
-\section{Arrays}
+\usepackage{amsmath,amstext,amssymb,amsthm}
+\usepackage{fullpage}
+
+\usepackage{ifpdf}
+\ifpdf
+  \usepackage[pdftex]{graphicx}
+  \usepackage[pdftex,unicode,bookmarks=false]{hyperref}
+
+  \pdfminorversion=5
+  \pdfcompresslevel=9
+  \pdfobjcompresslevel=9
+\fi
+
+\pagestyle{empty}
+
+\graphicspath{{./figures/}}
+
+\DeclareMathOperator{\EX}{\mathbb{E}}
+
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{}
+
+% Константа
+\def\const{\mathop{\mathrm{const}}\nolimits}
+
+% Модуль
+\providecommand{\abs}[1]{\left\lvert{#1}\right\rvert}
+
+
+\newtheorem*{definition}{Определение}
+\newtheorem*{example}{Пример}
+\newtheorem*{property}{Свойство}
+\newtheorem*{problem}{Задача}
+
+\begin{document}
+
+
+
+
+\chapter*{Data Structures}
+
+\section*{Arrays}
 
 {\bf Массив} -- структура данных, хранящая фиксированное число элементов одинакового размера, смежно расположенных в непрерывном куске памяти.
 
@@ -36,9 +85,9 @@ $$
 
 \subsection*{Dynamic Arrays}
 
-\section{Stacks}
+\section*{Stacks}
 
-\section{Queues}
+\section*{Queues}
 
 \subsection*{Implementation with Two Stacks}
 
@@ -75,7 +124,7 @@ $$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Linked Data Structures}
+\section*{Linked Data Structures}
 
 При реализации структур данных через массивы проблемы с добавлением и удалением были вызваны тем, что элементы в памяти были смежными, а размер выделенной памяти -- фиксированный.
 
@@ -105,10 +154,9 @@ $$
 
 %!!!
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Sets and Dictionaries}
+\section*{Sets and Dictionaries}
 
 До этого момента мы рассматривали структуры данных с точки зрения хранения последовательности элементов, а также их добавления и удаления. Теперь к этим операциям добавится {\em поиск}.
 
@@ -117,3 +165,7 @@ $$
 Необходимо представить $K$ в виде структуры данных, в которой для произвольного ключа $k$ можно эффективно проверить его принадлежность к $K$. Говорят, что такая структура реализует интерфейс {\em множества}.
 
 Более общая задача возникает, если с каждым ключом из $K$ сопоставлены данные -- элемент из множества значений $V$.  Тогда по заданному $k$ необходимо эффективно найти соответствующий ему элемент $v \in V$. Такая структура данных реализует интерфейс {\em словаря}.
+
+
+
+\end{document}
