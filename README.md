@@ -109,7 +109,7 @@
       * от одной вершины (Bellman–Ford, Dijkstra)
       * между всеми вершинами (Floyd–Warshall algorithm)
 
-7. **Алгоритмы на строках.** *(предварительно)*
+7. **Алгоритмы на строках.**
     * [Prefix tree (Trie)](https://en.wikipedia.org/wiki/Trie)
       * [Про переносы слов в TeX](http://tex.stackexchange.com/a/262595) и его простая [реализация на Python](https://nedbatchelder.com/code/modules/hyphenate.py)
     * [Suffix tree](https://en.wikipedia.org/wiki/Suffix_tree) *(Skiena, Section 12.3)*
