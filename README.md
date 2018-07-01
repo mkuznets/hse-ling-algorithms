@@ -115,3 +115,7 @@
     * [Suffix tree](https://en.wikipedia.org/wiki/Suffix_tree) *(Skiena, Section 12.3)*
 
 ## Экзамен
+
+Состоялся 28 июня 2018 в 9:00
+
+* [Задания](https://mkuznets.com/hse/2018-alg/final_problems.pdf) | [Решения](https://mkuznets.com/hse/2018-alg/final_solutions.pdf)
