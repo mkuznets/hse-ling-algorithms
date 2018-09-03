@@ -26,12 +26,6 @@ Proof techniques:
 * and induction (especially “strong” and “structural” induction).
 Lecture 0 requires induction, and whenever Lecture n − 1 requires induction, so does Lecture n.
 
-Mathematical maturity:
-* facility with abstraction,
-* formal (especially recursive) definitions, and (especially inductive) proofs;
-* writing and following mathematical arguments;
-* recognizing and avoiding syntactic, semantic, and/or logical nonsense.
-
 Discrete mathematics:
 * High-school algebra,
 * logarithm identities,
