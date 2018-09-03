@@ -1,20 +1,23 @@
-# Теория алгоритмов (осень 2018)
+# Theory of Algorithms (Fall 2018)
 
-Ранние версии: [[весна 2017]](https://github.com/mkuznets/hse-ling-algorithms/tree/2017-spring) [[весна 2018]](https://github.com/mkuznets/hse-ling-algorithms/tree/2018-spring)
+An algorithms course for undergraduates in [fundamental and computational linguistics](https://www.hse.ru/en/ba/ling/) at HSE.
 
-Курс для студентов 3-го года программы [Фундаментальная и компьютерная лингвистика](https://www.hse.ru/ba/ling/)
+Previous versions: [[Spring 2017]](https://github.com/mkuznets/hse-ling-algorithms/tree/2017-spring) [[Fall 2018]](https://github.com/mkuznets/hse-ling-algorithms/tree/2018-spring)
 
-* [О подозрениях в списывании](meta/cheating.md)
+# Useful Resources
 
-# Литература
+* Preliminaries:
+  * Eric Lehman et al. *[Mathematics for Computer Science](https://courses.csail.mit.edu/6.042/spring18/mcs.pdf)*
+  * Margaret M. Fleck *[Building Blocks for Theoretical Computer Science](http://mfleck.cs.illinois.edu/building-blocks/)*
+  * Bruce Mills *Theoretical Introduction to Programming*
+  * Graham, Knuth, Patashnik *Concrete Mathematics*
 
-* **CLRS:** Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest and Clifford Stein *Introduction to Algorithms*, 3rd edition, 2009
-  (*Алгоритмы: построение и анализ*, 3-е издание, 2013)
-* Steven Skiena *Algorithm Design Manual* (2nd edition, 2008)
-* Бабенко, Левин *Введение в теорию алгоритмов и структур данных*
-* D. Gusfield. *Algorithms on Strings, Trees, and Sequences: Computer Science and Computational Biology.* (1997)
+* Algorithms and Data Structures:
+  * Pat Morin *[Open Data Structures](http://opendatastructures.org)*
+  * **CLRS:** Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest and Clifford Stein *Introduction to Algorithms*, 3rd edition, 2009
+  * Steven Skiena *Algorithm Design Manual* (2nd edition, 2008)
 
-# Программа курса
+# Course Outline
 
 ## Theoretical Preliminaries
 
