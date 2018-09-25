@@ -17,6 +17,19 @@ Previous versions: [[Spring 2017]](https://github.com/mkuznets/hse-ling-algorith
   * **CLRS:** Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest and Clifford Stein *Introduction to Algorithms*, 3rd edition, 2009
   * Steven Skiena *Algorithm Design Manual* (2nd edition, 2008)
 
+# Schedule
+
+| Date      	| Type  	| Content, references                                                                                                                                                                           	|
+|-----------	|-------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+| Mon 03/09 	| 2×S   	| **Course introduction**                                                                                                                                                                           	|
+| Fri 07/09 	| L     	| **Proofs:** propositions; axioms; inference; common proof patterns: direct, contrapositive, if and only if, cases, contradiction, disproof; induction.                                            	|
+| Mon 10/09 	| 2×S   	| Proofs recitation. Examples of proof problems.                                                                                                                                                	|
+| Fri 14/09 	| L     	| *Cancelled*                                                                                                                                                                                     	|
+| Mon 17/09 	| 2×S   	| **Positional number systems:** definition, base conversion, special cases for binary and hexidecimal. **Number theory:** divisibility, greatest common divisor, Euclid's algorithm and its extension. 	|
+| Fri 21/09 	| 2×S+L 	| **Number theory cont’d:** primes, unique factorisation, modular arithmetic, inverses in Z/nZ, relative primality, Euler's theorem, Fermat's little theorem, RSA encryption.                       	|
+| Mon 24/09 	|       	| *Moved to 21/09*                                                                                                                                                                                	|
+| Fri 28/09 	| L     	| ...                                                                                                                                                                                           	|
+
 # Course Outline
 
 ## Theoretical Preliminaries
