@@ -1,3 +1,4 @@
+
 # Theory of Algorithms (Fall 2018)
 
 An algorithms course for undergraduates in [fundamental and computational linguistics](https://www.hse.ru/en/ba/ling/) at HSE.
@@ -19,16 +20,20 @@ Previous versions: [[Spring 2017]](https://github.com/mkuznets/hse-ling-algorith
 
 # Schedule
 
-| Date      	| Type  	| Content, references                                                                                                                                                                           	|
-|-----------	|-------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
-| Mon 03/09 	| 2×S   	| **Course introduction**                                                                                                                                                                           	|
-| Fri 07/09 	| L     	| **Proofs:** propositions; axioms; inference; common proof patterns: direct, contrapositive, if and only if, cases, contradiction, disproof; induction.                                            	|
-| Mon 10/09 	| 2×S   	| Proofs recitation. Examples of proof problems.                                                                                                                                                	|
-| Fri 14/09 	| L     	| *Cancelled*                                                                                                                                                                                     	|
-| Mon 17/09 	| 2×S   	| **Positional number systems:** definition, base conversion, special cases for binary and hexidecimal. **Number theory:** divisibility, greatest common divisor, Euclid's algorithm and its extension. 	|
-| Fri 21/09 	| 2×S+L 	| **Number theory cont’d:** primes, unique factorisation, modular arithmetic, inverses in Z/nZ, relative primality, Euler's theorem, Fermat's little theorem, RSA encryption.                       	|
-| Mon 24/09 	|       	| *Moved to 21/09*                                                                                                                                                                                	|
-| Fri 28/09 	| L     	| ...                                                                                                                                                                                           	|
+| Date      	| Type  	| Content, references                                                                                                                                                                                                                                                           	|
+|-----------	|-------	|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+| Mon 03/09 	| 2×S   	| Course introduction                                                                                                                                                                                                                                                           	|
+| Fri 07/09 	| L     	| Proofs: propositions; axioms; inference; common proof patterns: direct, contrapositive, if and only if, cases, contradiction, disproof; induction.                                                                                                                            	|
+| Mon 10/09 	| 2×S   	| Proofs recitation. Examples of proof problems.                                                                                                                                                                                                                                	|
+| Fri 14/09 	| L     	| Cancelled                                                                                                                                                                                                                                                                     	|
+| Mon 17/09 	| 2×S   	| Positional number systems: definition, base conversion, special cases for binary and hexidecimal. Number theory: divisibility, greatest common divisor, Euclid's algorithm and its extension.                                                                                 	|
+| Fri 21/09 	| 2×S+L 	| Number theory cont’d: primes, unique factorisation, modular arithmetic, inverses in Z/nZ, relative primality, Euler's theorem, Fermat's little theorem, RSA encryption.                                                                                                       	|
+| Mon 24/09 	|       	| Moved to 21/09                                                                                                                                                                                                                                                                	|
+| Fri 28/09 	| L     	| Algorithm analysis: RAM model, computational resources. Time complexity: expression as a function of input size, worst-cast and expected case. Abstracting from the implementation. The problem of complexity estimation and comparison.                                      	|
+| Mon 01/10 	| 2S    	| Algorithm analysis cont’d: asymptotic notation, Big Theta, O, Omega. Set theory detour: sequences, Cartesian product, binary relations, equivalence relations and partial orders. Comparison of functions: Big O and Ω as partial orders on equivalence classes induced by Θ. 	|
+| Fri 05/10 	| L     	| Algorithm analysis cont’d: common complexity functions with examples. Translating loops into sums when determining time-complexity. Arithmetic and other common series.                                                                                                       	|
+| Mon 08/10 	| 2S    	| Moved to 12/10                                                                                                                                                                                                                                                                	|
+| Fri 12/10 	| 2×S+L 	| ...                                                                                                                                                                                                                                                                           	|
 
 # Course Outline
 
