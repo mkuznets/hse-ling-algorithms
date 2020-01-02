@@ -1,4 +1,4 @@
-# Theory of Algorithms (Spring 2019)
+# Theory of Algorithms (Spring 2020)
 
 An algorithms course for undergraduates in [fundamental and computational linguistics](https://www.hse.ru/en/ba/ling/) at HSE.
 
