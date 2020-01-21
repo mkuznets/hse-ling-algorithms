@@ -16,3 +16,14 @@ Previous versions: [[Spring 2017]](https://github.com/mkuznets/hse-ling-algorith
 * **Dynamic Programming:** 'optimised recursion': top-down and bottom-up; text segmentation; edit distance; longest increasing subsequence.
 * **Graphs:** definitions; data structures: adjacency matrix, adjacency lists; depth- and breadth-first search; topological sort; disjoint-set (union-find); minimum spanning tree: Kruskal, Prim; shortest path problem: Bellman-Ford, Dijkstra.
 * **Strings:** edit-friendly string: gap buffers, ropes; edit distance on multiple documents; string matching: Knuth-Morris-Pratt, Boyer-Moore; prefix trees (tries); suffix trees.
+
+# Resources
+
+* Algorithms and Data Structures:
+  * **CLRS:** Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest and Clifford Stein *Introduction to Algorithms*, 3rd edition, 2009
+  * Steven Skiena *Algorithm Design Manual* (2nd edition, 2008)
+  * Pat Morin *[Open Data Structures](http://opendatastructures.org)*
+
+* Go
+  * [Tour of Go](https://tour.golang.org)
+  * [Packages](https://golang.org/pkg/)
