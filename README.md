@@ -17,6 +17,16 @@ Previous versions: [[Spring 2017]](https://github.com/mkuznets/hse-ling-algorith
 * **Graphs:** definitions; data structures: adjacency matrix, adjacency lists; depth- and breadth-first search; topological sort; disjoint-set (union-find); minimum spanning tree: Kruskal, Prim; shortest path problem: Bellman-Ford, Dijkstra.
 * **Strings:** edit-friendly string: gap buffers, ropes; edit distance on multiple documents; string matching: Knuth-Morris-Pratt, Boyer-Moore; prefix trees (tries); suffix trees.
 
+# Lecture Notes
+
+Click on the badge to download the latest version of the document:
+
+[![.pdf](https://mkuznets-latex.s3.eu-west-2.amazonaws.com/algorithms/lecture-notes-badge.svg)](https://mkuznets-latex.s3.eu-west-2.amazonaws.com/algorithms/lecture-notes.pdf)
+
+These notes suppose to fully cover the content of lectures as they are given. However, it is currently a living document in its early draft stage with little proofreading. Mind the gaps and be sure to update regularly. (It is probably best if you bookmark the link and read directly from your browser.)
+
+The LaTeX sources are kept at [mkuznets/latex](https://github.com/mkuznets/latex); the PDF is automatically updated on each commit. Feel free to submit an [issue](https://github.com/mkuznets/latex/issues/new) or a [pull request](https://github.com/mkuznets/latex/pulls) if you notice something out of place (which you will).
+
 # Resources
 
 * Algorithms and Data Structures:
