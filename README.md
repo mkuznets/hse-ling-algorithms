@@ -21,7 +21,7 @@ Previous versions: [[Spring 2017]](https://github.com/mkuznets/hse-ling-algorith
 
 Click on the badge to download the latest version of the document:
 
-[![.pdf](https://mkuznets-latex.s3.eu-west-2.amazonaws.com/algorithms/lecture-notes-badge.svg)](https://mkuznets-latex.s3.eu-west-2.amazonaws.com/algorithms/lecture-notes.pdf)
+[![.pdf](https://mkuznets-latex.s3.eu-west-2.amazonaws.com/algorithms/lecture-notes-badge.svg?rnd=1)](https://mkuznets-latex.s3.eu-west-2.amazonaws.com/algorithms/lecture-notes.pdf)
 
 These notes suppose to fully cover the content of lectures as they are given. However, it is currently a living document in its early draft stage with little proofreading. Mind the gaps and be sure to update regularly. (It is probably best if you bookmark the link and read directly from your browser.)
 
