@@ -10,6 +10,7 @@ Previous versions: [[Spring 2017]](https://github.com/mkuznets/hse-ling-algorith
 * **Algorithm Analysis:** running time: worst-, average-, and expected cases; asymptotic notation and analysis; amortised analysis.
 * **Data Structures:** dynamic array; multidimensional arrays; linked lists; stacks; queues; priority queues and heaps.
 * **Sorting (and The Importance of Being Sorted):** binary search; merging sorted sequences; comparison sorts: selection sort, heapsort, mergesort, quicksort; non-comparison sorts: counting sort, radix sort.
+  * [C++Now 2017: M. Skarupke “Generalizing and optimizing radix sort"](https://www.youtube.com/watch?v=zqs87a_7zxw)
 * **Trees:** definitions and properties; binary trees; binary search trees: walks, search, min, max, successor, predecessor, insert, delete.
 * **Hashing:** hash functions; hash tables; collision resolution: chaining, open addressing.
 * **Dictionaries and Sets:** lookup tables; bit arrays; limitations of hash tables; balanced search trees; skip lists; bloom filters.
