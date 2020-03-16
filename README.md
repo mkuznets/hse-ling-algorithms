@@ -12,7 +12,11 @@ Previous versions: [[Spring 2017]](https://github.com/mkuznets/hse-ling-algorith
 * **Sorting (and The Importance of Being Sorted):** binary search; merging sorted sequences; comparison sorts: selection sort, heapsort, mergesort, quicksort; non-comparison sorts: counting sort, radix sort.
   * [C++Now 2017: M. Skarupke “Generalizing and optimizing radix sort"](https://www.youtube.com/watch?v=zqs87a_7zxw)
 * **Trees:** definitions and properties; binary trees; binary search trees: walks, search, min, max, successor, predecessor, insert, delete.
+  * CLRS 12
 * **Hashing:** hash functions; hash tables; collision resolution: chaining, open addressing.
+  * Lectures from MIT 6.006: [part 1](https://www.youtube.com/watch?v=0M_kIqhwbFo), [part 2](https://www.youtube.com/watch?v=rvdJDijO2Ro)
+  * Lecture from ШАД (in Russian): [video](https://yandexdataschool.ru/edu-process/courses/algorithms#item-6) (until 1:18)
+  * CLRS 11
 * **Dictionaries and Sets:** lookup tables; bit arrays; limitations of hash tables; balanced search trees; skip lists; bloom filters.
 * **Dynamic Programming:** 'optimised recursion': top-down and bottom-up; text segmentation; edit distance; longest increasing subsequence.
 * **Graphs:** definitions; data structures: adjacency matrix, adjacency lists; depth- and breadth-first search; topological sort; disjoint-set (union-find); minimum spanning tree: Kruskal, Prim; shortest path problem: Bellman-Ford, Dijkstra.
